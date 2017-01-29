@@ -1,0 +1,27 @@
+---
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - php
+  fixme:
+    enabled: true
+  phpmd:
+    enabled: true
+    checks:
+      Controversial/CamelCaseVariableName:
+        enabled: false
+      Controversial/CamelCaseParameterName:
+        enabled: false
+      Controversial/CamelCasePropertyName:
+        enabled: false
+      Controversial/CamelCaseMethodName:
+        enabled: false
+      CleanCode/ElseExpression:
+        enabled: false
+ratings:
+  paths:
+  - "**.php"
+exclude_paths:
+- tests/
